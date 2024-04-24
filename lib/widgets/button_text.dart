@@ -1,4 +1,3 @@
-import 'package:aman_portfolio/theme/responsive_screen_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'dart:developer';
@@ -20,14 +19,7 @@ class ButtonTextLarge extends StatelessWidget {
     return Tooltip(
       message: message,
       child: TextButton(
-        onPressed: ResponsiveScreenProvider.isDesktopScreen(context)
-            ? onPressed
-            : () {
-                onPressed;
-                if (ResponsiveScreenProvider.isMobileScreen(context)) {
-                  Navigator.pop(context);
-                }
-              },
+        onPressed: onPressed,
         child: Text(
           text,
           style: Theme.of(context).textTheme.titleMedium,

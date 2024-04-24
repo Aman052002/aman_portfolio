@@ -45,7 +45,7 @@ class _SplashState extends State<Splash> {
   @override
   void initState() {
     super.initState();
-    Timer(const Duration(seconds: 3), () {
+    Timer(const Duration(seconds: 1), () {
       Navigator.pop(context);
       Navigator.push(
         context,
@@ -144,7 +144,7 @@ class _HomePageState extends State<HomePage> {
           : AppBar(elevation: 0.0),
       drawer: ResponsiveScreenProvider.isDesktopScreen(context)
           ? null
-          : NavBar().mobileNavBar(),
+          : NavBar().mobileNavBar(context: context),
       body: SingleChildScrollView(
         controller: _scrollController,
         physics: const BouncingScrollPhysics(),
