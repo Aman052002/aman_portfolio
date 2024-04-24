@@ -20,12 +20,14 @@ class ButtonTextLarge extends StatelessWidget {
     return Tooltip(
       message: message,
       child: TextButton(
-        onPressed:  () {
-          onPressed;
-          if(ResponsiveScreenProvider.isMobileScreen(context)){
-            Navigator.pop(context);
-          }
-        },
+        onPressed: ResponsiveScreenProvider.isDesktopScreen(context)
+            ? onPressed
+            : () {
+                onPressed;
+                if (ResponsiveScreenProvider.isMobileScreen(context)) {
+                  Navigator.pop(context);
+                }
+              },
         child: Text(
           text,
           style: Theme.of(context).textTheme.titleMedium,

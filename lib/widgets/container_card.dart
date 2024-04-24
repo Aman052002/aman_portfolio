@@ -40,19 +40,12 @@ class ContainerCard {
                 const SizedBox(height: 20.0),
                 SelectableText(
                   title,
-                  style: TextStyle(
-                    fontSize:
-                        AppThemeData.darkTheme.textTheme.titleMedium!.fontSize,
-                    fontWeight: AppThemeData
-                        .darkTheme.textTheme.headlineSmall!.fontWeight,
-                    color: AppThemeData.textWhite,
-                  ),
+                  style: AppThemeData.darkTheme.textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w800),
                 ),
               ],
             ),
             const SizedBox(height: 10.0),
-            SelectableText(description,
-                style: AppThemeData.darkTheme.textTheme.labelLarge),
+            SelectableText(description, style: AppThemeData.darkTheme.textTheme.labelLarge),
             const SizedBox(height: 20.0),
             // ButtonTextSmall(
             //   text: 'View More >>',
@@ -96,11 +89,7 @@ class ContainerCard {
               children: [
                 Image.asset('assets/images/$image.png', height: 70.0),
                 const SizedBox(height: 20.0),
-                SelectableText(title, style: TextStyle(
-                      fontSize: AppThemeData.darkTheme.textTheme.titleMedium!.fontSize,
-                      fontWeight: AppThemeData.darkTheme.textTheme.headlineSmall!.fontWeight,
-                      color: AppThemeData.textPrimary,
-                    )),
+                SelectableText(title, style: AppThemeData.darkTheme.textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w800)),
                 const SizedBox(height: 10.0),
                 TextPairs().type2(
                   title: values[0],
@@ -164,13 +153,7 @@ class ContainerCard {
                 Image.asset('assets/images/$image.png', height: 70.0),
                 const SizedBox(height: 20.0),
                 SelectableText(title,
-                    style: TextStyle(
-                      fontSize: AppThemeData
-                          .darkTheme.textTheme.titleMedium!.fontSize,
-                      fontWeight: AppThemeData
-                          .darkTheme.textTheme.headlineSmall!.fontWeight,
-                      color: AppThemeData.textPrimary,
-                    )),
+                    style: AppThemeData.darkTheme.textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w800)),
                 const SizedBox(height: 10.0),
                 TextPairs().type2(
                   title: role,
@@ -197,41 +180,4 @@ class ContainerCard {
     );
   }
 
-  Widget type4({
-    required String image,
-    required String title,
-    required String message,
-    required Uri url,
-  }) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.start,
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
-        Tooltip(
-          message: 'Visit $message',
-          child: MouseRegion(
-            cursor: SystemMouseCursors.click,
-            child: GestureDetector(
-              onTap: () async {
-                if (!await launchUrl(url)) {
-                  throw 'Could not launch $url';
-                }
-                log("Direct to: $url");
-              },
-              child: Text(
-                message,
-                style: TextStyle(
-                  fontSize:
-                      AppThemeData.darkTheme.textTheme.labelLarge!.fontSize,
-                  fontWeight:
-                      AppThemeData.darkTheme.textTheme.labelLarge!.fontWeight,
-                  color: AppThemeData.textWhite,
-                ),
-              ),
-            ),
-          ),
-        ),
-      ],
-    );
-  }
 }

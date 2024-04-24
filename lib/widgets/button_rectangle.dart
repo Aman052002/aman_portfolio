@@ -22,12 +22,14 @@ class ButtonRectangle extends StatelessWidget {
     return Tooltip(
       message: message,
       child: ElevatedButton(
-        onPressed: () {
-          onPressed;
-          if(ResponsiveScreenProvider.isMobileScreen(context)){
-            Navigator.pop(context);
-          }
-        },
+        onPressed: ResponsiveScreenProvider.isDesktopScreen(context)
+            ? onPressed
+            : () {
+                onPressed;
+                if (ResponsiveScreenProvider.isMobileScreen(context)) {
+                  Navigator.pop(context);
+                }
+              },
         style: ElevatedButton.styleFrom(
           backgroundColor: color,
           foregroundColor: AppThemeData.textWhite,
