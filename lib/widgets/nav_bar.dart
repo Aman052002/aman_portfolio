@@ -38,7 +38,6 @@ class NavBar {
           message: 'Go to ${DataValues.navBarExperience} section',
         ),
         const SizedBox(width: 20.0),
-
         ButtonRectangle(
             name: DataValues.navBarContactMe,
             onPressed: () => Scrollable.ensureVisible(

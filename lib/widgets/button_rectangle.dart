@@ -1,3 +1,4 @@
+import 'package:aman_portfolio/theme/responsive_screen_provider.dart';
 import 'package:flutter/material.dart';
 
 import '../theme/app_theme.dart';
@@ -21,7 +22,12 @@ class ButtonRectangle extends StatelessWidget {
     return Tooltip(
       message: message,
       child: ElevatedButton(
-        onPressed: onPressed,
+        onPressed: () {
+          onPressed;
+          if(ResponsiveScreenProvider.isMobileScreen(context)){
+            Navigator.pop(context);
+          }
+        },
         style: ElevatedButton.styleFrom(
           backgroundColor: color,
           foregroundColor: AppThemeData.textWhite,
