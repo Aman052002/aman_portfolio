@@ -51,6 +51,7 @@ class NavBar {
     );
   }
 
+
   Widget mobileNavBar({required BuildContext context}) {
     Widget miniHeader() {
       return Column(
