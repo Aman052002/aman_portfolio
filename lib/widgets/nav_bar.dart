@@ -1,7 +1,5 @@
-import 'package:aman_portfolio/main.dart';
 import 'package:aman_portfolio/theme/responsive_screen_provider.dart';
 import 'package:flutter/material.dart';
-
 import '../statics/data_values.dart';
 import '../statics/key_holders.dart';
 import '../theme/app_theme.dart';
@@ -40,7 +38,7 @@ class NavBar {
           message: 'Go to ${DataValues.navBarExperience} section',
         ),
         const SizedBox(width: 10.0),
-        ButtonTextLarge(
+        /*ButtonTextLarge(
           text: DataValues.navBarResume,
           onPressed: () {
             Navigator.pop(context);
@@ -53,7 +51,7 @@ class NavBar {
           },
           message: 'Go to ${DataValues.navBarResume} section',
         ),
-        const SizedBox(width: 10.0),
+        const SizedBox(width: 10.0),*/
         ButtonRectangle(
             name: DataValues.navBarContactMe,
             onPressed: () => Scrollable.ensureVisible(
@@ -145,7 +143,7 @@ class NavBar {
             },
             message: 'Go to ${DataValues.navBarExperience} section',
           ),
-          const SizedBox(height: 10.0),
+          /*const SizedBox(height: 10.0),
           ButtonTextLarge(
             text: DataValues.navBarResume,
             onPressed: () {
@@ -158,7 +156,7 @@ class NavBar {
               );
             },
             message: 'Go to ${DataValues.navBarResume} section',
-          ),
+          ),*/
           const SizedBox(height: 25.0),
           ButtonRectangle(
               name: DataValues.navBarContactMe,
