@@ -10,7 +10,24 @@ class DS1Header extends StatelessWidget {
 
   List<Widget> headerData() {
     return [
-      Image.asset('assets/images/logo.png', height: 250.0, width: 250.0),
+      Container(
+        width: 280,
+        height: 280,
+        decoration: const BoxDecoration(
+          color: AppThemeData.backgroundGrey,
+          shape: BoxShape.circle,
+        ),
+        child: Center(
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(125),
+            child: Image.asset(
+              'assets/images/logo.png',
+              height: 250.0,
+              width: 250.0,
+            ),
+          ),
+        ),
+      ),
       const SizedBox(width: 60.0),
       Column(
         children: [
@@ -46,9 +63,10 @@ class DS1Header extends StatelessWidget {
                 children: headerData(),
               ),
               const SizedBox(height: 60.0),
-              NavBar().desktopNavBar(),
+              NavBar().desktopNavBar(context: context),
             ],
-          )),
+          ),
+      ),
     );
   }
 }

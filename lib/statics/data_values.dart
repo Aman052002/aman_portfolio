@@ -26,6 +26,7 @@ class DataValues {
   static const String navBarAboutMe = 'About Me';
   static const String navBarEducation = 'Education';
   static const String navBarExperience = 'Experience';
+  static const String navBarResume = 'Resume';
   static const String navBarContactMe = 'Contact Me';
 
   // About me

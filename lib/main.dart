@@ -1,7 +1,6 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
-
+import 'package:pdf_render/pdf_render_widgets.dart';
 import 'theme/responsive_screen_provider.dart';
 import 'theme/app_theme.dart';
 import 'widgets/nav_bar.dart';
@@ -60,7 +59,7 @@ class _SplashState extends State<Splash> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Image.asset('assets/images/splash.png',height: double.infinity),
+        child: Image.asset('assets/images/splash.png', height: double.infinity),
       ),
     );
   }
@@ -166,6 +165,58 @@ class _HomePageState extends State<HomePage> {
                 Icons.arrow_upward_rounded,
               ),
             ),
+    );
+  }
+}
+
+class MyCV extends StatefulWidget {
+  const MyCV({Key? key}) : super(key: key);
+
+  @override
+  State<MyCV> createState() => _MyCVState();
+}
+
+class _MyCVState extends State<MyCV> {
+  bool _isLoading = true;
+
+  @override
+  void initState() {
+    super.initState();
+    loadDocument();
+  }
+
+  loadDocument() async {
+    // document = await PDFDocument.fromAsset('assets/images/aman_rathore_cv.pdf');
+    setState(() => _isLoading = false);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: _isLoading
+          ? const CircularProgressIndicator()
+          : /*PDFViewer(
+              document: document,
+              lazyLoad: false,
+              zoomSteps: 1,
+              showPicker: false,
+              showNavigation: false,
+              showIndicator: true,
+              progressIndicator: const CircularProgressIndicator(),
+              backgroundColor: Colors.white,
+              scrollDirection: Axis.vertical,
+            )*/
+          SafeArea(
+            child: PdfViewer.openAsset(
+                'assets/images/aman_rathore_cv.pdf',
+                onError: (p0) => print('ERROR:::::::  $p0'),
+                params: const PdfViewerParams(
+                  // padding: 10,
+                  minScale: 1.0,
+                  // scrollDirection: Axis.horizontal,
+                ),
+              ),
+          ),
     );
   }
 }

@@ -1,3 +1,4 @@
+import 'package:aman_portfolio/main.dart';
 import 'package:aman_portfolio/theme/responsive_screen_provider.dart';
 import 'package:flutter/material.dart';
 
@@ -8,7 +9,7 @@ import 'button_rectangle.dart';
 import 'button_text.dart';
 
 class NavBar {
-  Widget desktopNavBar() {
+  Widget desktopNavBar({required BuildContext context}) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
@@ -20,7 +21,7 @@ class NavBar {
           ),
           message: 'Go to ${DataValues.navBarAboutMe} section',
         ),
-        const SizedBox(width: 20.0),
+        const SizedBox(width: 10.0),
         ButtonTextLarge(
           text: DataValues.navBarEducation,
           onPressed: () => Scrollable.ensureVisible(
@@ -29,7 +30,7 @@ class NavBar {
           ),
           message: 'Go to ${DataValues.navBarEducation} section',
         ),
-        const SizedBox(width: 20.0),
+        const SizedBox(width: 10.0),
         ButtonTextLarge(
           text: DataValues.navBarExperience,
           onPressed: () => Scrollable.ensureVisible(
@@ -38,7 +39,21 @@ class NavBar {
           ),
           message: 'Go to ${DataValues.navBarExperience} section',
         ),
-        const SizedBox(width: 20.0),
+        const SizedBox(width: 10.0),
+        ButtonTextLarge(
+          text: DataValues.navBarResume,
+          onPressed: () {
+            Navigator.pop(context);
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const MyCV(),
+              ),
+            );
+          },
+          message: 'Go to ${DataValues.navBarResume} section',
+        ),
+        const SizedBox(width: 10.0),
         ButtonRectangle(
             name: DataValues.navBarContactMe,
             onPressed: () => Scrollable.ensureVisible(
@@ -56,7 +71,20 @@ class NavBar {
     Widget miniHeader() {
       return Column(
         children: [
-          Image.asset('assets/images/logo.png', height: 80.0, width: 80.0),
+          Container(
+            width: 130,
+            height: 130,
+            decoration: const BoxDecoration(
+              color: AppThemeData.backgroundBlack,
+              shape: BoxShape.circle,
+            ),
+            child: Center(
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(55),
+                child: Image.asset('assets/images/logo.png', height: 110.0, width: 110.0),
+              ),
+            ),
+          ),
           const SizedBox(height: 10.0),
           SelectableText(
             DataValues.headerName,
@@ -68,7 +96,7 @@ class NavBar {
           ),
           SelectableText(
             DataValues.headerTitle,
-            style: AppThemeData.darkTheme.textTheme.labelLarge,
+            style: AppThemeData.darkTheme.textTheme.titleLarge?.copyWith(fontSize: 16,fontWeight: FontWeight.w600),
           ),
         ],
       );
@@ -81,7 +109,7 @@ class NavBar {
         children: [
           const SizedBox(height: 60.0),
           miniHeader(),
-          const SizedBox(height: 20.0),
+          const SizedBox(height: 40.0),
           ButtonTextLarge(
             text: DataValues.navBarAboutMe,
             onPressed: () {
@@ -93,7 +121,7 @@ class NavBar {
             },
             message: 'Go to ${DataValues.navBarAboutMe} section',
           ),
-          const SizedBox(height: 20.0),
+          const SizedBox(height: 10.0),
           ButtonTextLarge(
             text: DataValues.navBarEducation,
             onPressed: () {
@@ -105,7 +133,7 @@ class NavBar {
             },
             message: 'Go to ${DataValues.navBarEducation} section',
           ),
-          const SizedBox(height: 20.0),
+          const SizedBox(height: 10.0),
           ButtonTextLarge(
             text: DataValues.navBarExperience,
             onPressed: () {
@@ -117,7 +145,21 @@ class NavBar {
             },
             message: 'Go to ${DataValues.navBarExperience} section',
           ),
-          const SizedBox(height: 20.0),
+          const SizedBox(height: 10.0),
+          ButtonTextLarge(
+            text: DataValues.navBarResume,
+            onPressed: () {
+              Navigator.pop(context);
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const MyCV(),
+                ),
+              );
+            },
+            message: 'Go to ${DataValues.navBarResume} section',
+          ),
+          const SizedBox(height: 25.0),
           ButtonRectangle(
               name: DataValues.navBarContactMe,
               onPressed: () {
