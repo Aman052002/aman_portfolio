@@ -1,3 +1,4 @@
+import 'package:aman_portfolio/main.dart';
 import 'package:aman_portfolio/theme/responsive_screen_provider.dart';
 import 'package:flutter/material.dart';
 import '../statics/data_values.dart';
@@ -7,6 +8,7 @@ import 'button_rectangle.dart';
 import 'button_text.dart';
 
 class NavBar {
+
   Widget desktopNavBar({required BuildContext context}) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
@@ -38,10 +40,9 @@ class NavBar {
           message: 'Go to ${DataValues.navBarExperience} section',
         ),
         const SizedBox(width: 10.0),
-        /*ButtonTextLarge(
+        ButtonTextLarge(
           text: DataValues.navBarResume,
           onPressed: () {
-            Navigator.pop(context);
             Navigator.push(
               context,
               MaterialPageRoute(
@@ -51,7 +52,7 @@ class NavBar {
           },
           message: 'Go to ${DataValues.navBarResume} section',
         ),
-        const SizedBox(width: 10.0),*/
+        const SizedBox(width: 10.0),
         ButtonRectangle(
             name: DataValues.navBarContactMe,
             onPressed: () => Scrollable.ensureVisible(
@@ -59,11 +60,11 @@ class NavBar {
                   duration: const Duration(milliseconds: 1000),
                 ),
             color: AppThemeData.buttonPrimary,
-            message: 'Go to ${DataValues.navBarContactMe} section'),
+            message: 'Go to ${DataValues.navBarContactMe} section',
+        ),
       ],
     );
   }
-
 
   Widget mobileNavBar({required BuildContext context}) {
     Widget miniHeader() {
@@ -143,7 +144,7 @@ class NavBar {
             },
             message: 'Go to ${DataValues.navBarExperience} section',
           ),
-          /*const SizedBox(height: 10.0),
+          const SizedBox(height: 10.0),
           ButtonTextLarge(
             text: DataValues.navBarResume,
             onPressed: () {
@@ -156,7 +157,7 @@ class NavBar {
               );
             },
             message: 'Go to ${DataValues.navBarResume} section',
-          ),*/
+          ),
           const SizedBox(height: 25.0),
           ButtonRectangle(
               name: DataValues.navBarContactMe,
@@ -170,9 +171,11 @@ class NavBar {
                 );
               },
               color: AppThemeData.buttonPrimary,
-              message: 'Go to ${DataValues.navBarContactMe} section'),
+              message: 'Go to ${DataValues.navBarContactMe} section',
+          ),
         ],
       ),
     );
   }
+
 }
