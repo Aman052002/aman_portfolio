@@ -1,4 +1,5 @@
 import 'package:aman_portfolio/main.dart';
+import 'package:aman_portfolio/my_skills/my_skills.dart';
 import 'package:aman_portfolio/theme/responsive_screen_provider.dart';
 import 'package:flutter/material.dart';
 import '../statics/data_values.dart';
@@ -97,6 +98,7 @@ class NavBar {
             DataValues.headerTitle,
             style: AppThemeData.darkTheme.textTheme.titleLarge?.copyWith(fontSize: 16,fontWeight: FontWeight.w600),
           ),
+          const SizedBox(height: 10.0),
         ],
       );
     }
@@ -146,6 +148,18 @@ class NavBar {
           ),
           const SizedBox(height: 10.0),
           ButtonTextLarge(
+            text: DataValues.navBarMySkills,
+            onPressed: () {
+              Navigator.pop(context);
+              Scrollable.ensureVisible(
+                KeyHolders.mySkillsKey.currentContext!,
+                duration: const Duration(milliseconds: 1000),
+              );
+            },
+            message: 'Go to ${DataValues.navBarMySkills} section',
+          ),
+          const SizedBox(height: 10.0),
+          ButtonTextLarge(
             text: DataValues.navBarResume,
             onPressed: () {
               Navigator.pop(context);
@@ -173,6 +187,60 @@ class NavBar {
               color: AppThemeData.buttonPrimary,
               message: 'Go to ${DataValues.navBarContactMe} section',
           ),
+        ],
+      ),
+    );
+  }
+
+}
+
+class DesktopDrawer {
+
+  Widget desktopDrawer({required BuildContext context}) {
+    Widget miniHeader() {
+      return Column(
+        children: [
+          Container(
+            width: 130,
+            height: 130,
+            decoration: const BoxDecoration(
+              color: AppThemeData.backgroundBlack,
+              shape: BoxShape.circle,
+            ),
+            child: Center(
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(55),
+                child: Image.asset('assets/images/logo.png', height: 110.0, width: 110.0),
+              ),
+            ),
+          ),
+          const SizedBox(height: 10.0),
+          SelectableText(
+            DataValues.headerName,
+            style: TextStyle(
+              color: AppThemeData.textPrimary,
+              fontSize: AppThemeData.darkTheme.textTheme.titleLarge?.fontSize,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          SelectableText(
+            DataValues.headerTitle,
+            style: AppThemeData.darkTheme.textTheme.titleLarge?.copyWith(fontSize: 16,fontWeight: FontWeight.w600),
+          ),
+          const SizedBox(height: 10.0),
+          const MySKills(),
+        ],
+      );
+    }
+
+    return Drawer(
+      backgroundColor: AppThemeData.backgroundBlack,
+      child: ListView(
+        padding: const EdgeInsets.symmetric(horizontal: 20.0),
+        children: [
+          const SizedBox(height: 60.0),
+          miniHeader(),
+          const SizedBox(height: 25.0),
         ],
       ),
     );

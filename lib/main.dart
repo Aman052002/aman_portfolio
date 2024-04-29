@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:aman_portfolio/mobile/ms_6_myskills.dart';
 import 'package:flutter/material.dart';
 import 'package:pdfrx/pdfrx.dart';
 import 'theme/responsive_screen_provider.dart';
@@ -132,6 +133,7 @@ class _HomePageState extends State<HomePage> {
           MS2AboutMe(),
           MS3Education(),
           MS4Experience(),
+          MS6MySkills(),
           MS7Contact(),
         ],
       );
@@ -139,10 +141,10 @@ class _HomePageState extends State<HomePage> {
 
     return Scaffold(
       appBar: ResponsiveScreenProvider.isDesktopScreen(context)
-          ? null
+          ? AppBar(elevation: 0.0)
           : AppBar(elevation: 0.0),
       drawer: ResponsiveScreenProvider.isDesktopScreen(context)
-          ? null
+          ? DesktopDrawer().desktopDrawer(context: context)
           : NavBar().mobileNavBar(context: context),
       body: SingleChildScrollView(
         controller: _scrollController,
@@ -167,6 +169,7 @@ class _HomePageState extends State<HomePage> {
             ),
     );
   }
+
 }
 
 class MyCV extends StatefulWidget {

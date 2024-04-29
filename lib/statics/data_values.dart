@@ -27,6 +27,7 @@ class DataValues {
   static const String navBarEducation = 'Education';
   static const String navBarExperience = 'Experience';
   static const String navBarResume = 'Resume';
+  static const String navBarMySkills = 'MySkills';
   static const String navBarContactMe = 'Contact Me';
 
   // About me
@@ -92,6 +93,9 @@ class DataValues {
   static const String educationBannerTitle = 'Online Learning Platforms';
   static const String educationBannerWeb =
       'Click here to find out more about my online learning platforms.';
+
+  // MySkills
+  static const String mySkillsTitle = 'MySkills';
 
   // Experience
   static const String experienceTitle = 'Experience';
