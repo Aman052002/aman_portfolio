@@ -1,4 +1,4 @@
-import 'package:aman_portfolio/main.dart';
+import 'package:aman_portfolio/my_cv/my_cv.dart';
 import 'package:aman_portfolio/my_skills/my_skills.dart';
 import 'package:aman_portfolio/theme/responsive_screen_provider.dart';
 import 'package:flutter/material.dart';
@@ -228,7 +228,25 @@ class DesktopDrawer {
             style: AppThemeData.darkTheme.textTheme.titleLarge?.copyWith(fontSize: 16,fontWeight: FontWeight.w600),
           ),
           const SizedBox(height: 10.0),
-          const MySKills(),
+          Container(
+            key: KeyHolders.mySkillsKey,
+            color: AppThemeData.backgroundGrey,
+            width: double.infinity,
+            child:  Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  SelectableText(
+                    DataValues.mySkillsTitle,
+                    style: Theme.of(context).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w700),
+                  ),
+                  const SizedBox(height: 10.0),
+                  const MySKills(),
+                ],
+              ),
+            ),
+          )
         ],
       );
     }
