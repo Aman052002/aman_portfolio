@@ -1,8 +1,8 @@
+import 'package:aman_portfolio/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
 class AnimatedLinearProgressIndicator extends StatelessWidget {
-  const AnimatedLinearProgressIndicator(
-      {super.key, required this.percentage, required this.title, this.image});
+  const AnimatedLinearProgressIndicator({super.key, required this.percentage, required this.title, this.image});
 
   final double percentage;
   final String title;
@@ -38,8 +38,8 @@ class AnimatedLinearProgressIndicator extends StatelessWidget {
               const SizedBox(height: 10),
               LinearProgressIndicator(
                 value: value,
-                backgroundColor: Colors.black,
-                color: Colors.amberAccent,
+                backgroundColor: AppThemeData.backgroundBlack ,
+                color: AppThemeData.primaryColor,
               ),
             ],
           );

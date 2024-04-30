@@ -42,26 +42,56 @@ class Splash extends StatefulWidget {
 }
 
 class _SplashState extends State<Splash> {
+  double imageSize = 500.0; // Initial size of the image
+
   @override
   void initState() {
     super.initState();
-    Timer(const Duration(seconds: 1), () {
-      Navigator.pop(context);
-      Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (context) => const HomePage(),
-        ),
-      );
-    });
+    getImageSize();
+    // Timer(
+    //   const Duration(seconds: 2), () {
+    //
+    //   },
+    // );
   }
+
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Image.asset('assets/images/splash.png', height: double.infinity),
+        child: image(h: imageSize, w: imageSize),
       ),
+    );
+  }
+  void getImageSize() {
+    const minSize = 0.0;
+    const stepSize = 10.0; // Adjust the step size as needed
+    const duration = Duration(milliseconds: 40); // Duration for each step
+
+    Timer.periodic(duration, (timer) {
+      setState(() {
+        if (imageSize > minSize) {
+          imageSize -= stepSize; // Decrease the size by stepSize
+        } else {
+          timer.cancel(); // Stop the timer when reaching the minimum size
+          Navigator.pop(context);
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const HomePage(),
+            ),
+          );
+        }
+      });
+    });
+  }
+
+  Widget image({required double h, required double w}) {
+    return SizedBox(
+      height: h,
+      width: w,
+      child: Image.asset('assets/images/splash.png', height: double.infinity),
     );
   }
 }
@@ -169,7 +199,6 @@ class _HomePageState extends State<HomePage> {
             ),
     );
   }
-
 }
 
 class MyCV extends StatefulWidget {

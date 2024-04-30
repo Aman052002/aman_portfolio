@@ -63,39 +63,14 @@ class AppThemeData {
       actionTextColor: textWhite,
     ),
     textTheme: const TextTheme(
-      displayMedium: TextStyle(
-        fontSize: 54.0,
-        fontWeight: FontWeight.w700,
-        color: textWhite,
-      ),
-      displaySmall: TextStyle(
-          fontSize: 42.0,
-          fontWeight: FontWeight.w700,
-          color: AppThemeData.textPrimary),
-      headlineSmall: TextStyle(
-          fontSize: 28.0,
-          fontWeight: FontWeight.w700,
-          color: AppThemeData.textPrimary),
-      titleLarge: TextStyle(
-          fontSize: 20.0,
-          fontWeight: FontWeight.w500,
-          color: AppThemeData.textPrimary),
-      titleMedium: TextStyle(
-          fontSize: 18.0,
-          fontWeight: FontWeight.w500,
-          color: AppThemeData.textWhite),
-      titleSmall: TextStyle(
-          fontSize: 16.0,
-          fontWeight: FontWeight.w400,
-          color: AppThemeData.textWhite),
-      labelLarge: TextStyle(
-          fontSize: 14.0,
-          fontWeight: FontWeight.w400,
-          color: AppThemeData.textWhite),
-      labelMedium: TextStyle(
-          fontSize: 12.0,
-          fontWeight: FontWeight.w500,
-          color: AppThemeData.textWhite),
+      displayMedium: TextStyle(fontSize: 54.0, fontWeight: FontWeight.w700, color: textWhite),
+      displaySmall: TextStyle(fontSize: 42.0, fontWeight: FontWeight.w700, color: AppThemeData.textPrimary),
+      headlineSmall: TextStyle(fontSize: 28.0, fontWeight: FontWeight.w700, color: AppThemeData.textPrimary),
+      titleLarge: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w500, color: AppThemeData.textPrimary),
+      titleMedium: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w500, color: AppThemeData.textWhite),
+      titleSmall: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w400, color: AppThemeData.textWhite),
+      labelLarge: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w400, color: AppThemeData.textWhite),
+      labelMedium: TextStyle(fontSize: 12.0, fontWeight: FontWeight.w500, color: AppThemeData.textWhite),
     ),
     colorScheme: const ColorScheme.dark().copyWith(background: backgroundBlack),
   );
