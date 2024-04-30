@@ -48,11 +48,7 @@ class _SplashState extends State<Splash> {
   void initState() {
     super.initState();
     getImageSize();
-    // Timer(
-    //   const Duration(seconds: 2), () {
-    //
-    //   },
-    // );
+
   }
 
 
@@ -67,14 +63,13 @@ class _SplashState extends State<Splash> {
   void getImageSize() {
     const minSize = 0.0;
     const stepSize = 10.0; // Adjust the step size as needed
-    const duration = Duration(milliseconds: 40); // Duration for each step
+    const duration = Duration(milliseconds: 50); // Duration for each step
 
     Timer.periodic(duration, (timer) {
       setState(() {
         if (imageSize > minSize) {
           imageSize -= stepSize; // Decrease the size by stepSize
         } else {
-          timer.cancel(); // Stop the timer when reaching the minimum size
           Navigator.pop(context);
           Navigator.push(
             context,
@@ -82,6 +77,7 @@ class _SplashState extends State<Splash> {
               builder: (context) => const HomePage(),
             ),
           );
+          timer.cancel(); // Stop the timer when reaching the minimum size
         }
       });
     });

@@ -9,6 +9,7 @@ class MyCV extends StatefulWidget {
 }
 
 class _MyCVState extends State<MyCV> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,6 +21,7 @@ class _MyCVState extends State<MyCV> {
           },
         ),
         title: const Text('Resume'),
+
       ),
       body: SafeArea(
         child: PdfViewer.asset(
