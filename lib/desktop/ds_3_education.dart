@@ -21,7 +21,8 @@ class DS3Education extends StatelessWidget {
           children: [
             const FrameTitle(
                 title: DataValues.educationTitle,
-                description: DataValues.educationDescription),
+                description: DataValues.educationDescription,
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.start,

@@ -40,6 +40,7 @@ class AnimatedLinearProgressIndicator extends StatelessWidget {
                 value: value,
                 backgroundColor: AppThemeData.backgroundBlack ,
                 color: AppThemeData.primaryColor,
+                borderRadius: BorderRadius.circular(10.0),
               ),
             ],
           );
@@ -78,12 +79,12 @@ class MySKills extends StatelessWidget {
           image: 'assets/icons/dart.png',
         ),
         AnimatedLinearProgressIndicator(
-          percentage: 0.8,
+          percentage: 0.98,
           title: 'Responsive Design',
           image: 'assets/icons/flutter.png',
         ),
         AnimatedLinearProgressIndicator(
-          percentage: 0.9,
+          percentage: 0.94,
           title: 'Clean Architecture',
           image: 'assets/icons/flutter.png',
         ),

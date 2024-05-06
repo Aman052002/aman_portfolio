@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
-import 'dart:developer';
-
 import '../theme/app_theme.dart';
 import '../widgets/text_pairs.dart';
 import 'button_text.dart';
