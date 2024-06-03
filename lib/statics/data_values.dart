@@ -80,7 +80,7 @@ class DataValues {
   static const String educationOrg1Title = 'Nirmal VidhyaPeeth Barwaha, M.P';
   static const String educationOrg1Course1Name = 'Higher secondary [HSC]';
   static const String educationOrg1Course1Grade = 'Combined Maths, Physics, and Chemistry';
-  static const String educationOrg1Course1Year = 'Attempted: 2016 & 2017';
+  static const String educationOrg1Course1Year = '';
   static const String educationOrg1Course3Name = 'Education Period';
   static const String educationOrg1Course3Year = 'Secondary: 2019 - 2020';
   static const String educationOrg1Course3Year2 = 'Higher Secondary: 2022 - 2023';
