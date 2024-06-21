@@ -12,6 +12,9 @@ class DataValues {
   static Uri githubURL = Uri.parse('https://github.com/');
   static Uri linkedinURL = Uri.parse('https://www.linkedin.com/in/aman-rathore-51b981287');
   static Uri twitterURL = Uri.parse('https://twitter.com/');
+  static Uri collegeURL = Uri.parse('https://astral.ac.in/');
+  static Uri companyURL = Uri.parse('https://www.dollopinfotech.com/');
+  static Uri schoolURL = Uri.parse('https://www.nirmalvidhyapeeth.in/');
   static Uri telegramURL = Uri.parse('https://t.me/');
   static Uri facebookURL = Uri.parse('https://facebook.com/');
   static Uri instagramURL = Uri.parse('https://instagram.com/');
