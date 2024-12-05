@@ -45253,7 +45253,7 @@ A.oF.prototype={
 ak(){return new A.S2(B.k)}}
 A.S2.prototype={
 J(a){var s=null
-return A.apO(A.aov(s,A.ape(s,B.EC,s,new A.ait(a),s,s),B.T0),A.aa_(!0,new A.z3(new A.z_("assets/images/aman_rathore_cv.pdf",s,!0,!0),B.B6,s),!0),s,s)}}
+return A.apO(A.aov(s,A.ape(s,B.EC,s,new A.ait(a),s,s),B.T0),A.aa_(!0,new A.z3(new A.z_("assets/images/aman_new_cv.pdf",s,!0,!0),B.B6,s),!0),s,s)}}
 A.ait.prototype={
 $0(){A.h4(this.a).iW(null)},
 $S:0}

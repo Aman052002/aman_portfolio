@@ -21,7 +21,6 @@ class _MyCVState extends State<MyCV> {
           },
         ),
         title: const Text('Resume'),
-
       ),
       body: SafeArea(
         child: PdfViewer.asset(
