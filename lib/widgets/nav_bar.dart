@@ -81,7 +81,12 @@ class NavBar {
             child: Center(
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(55),
-                child: Image.asset('assets/images/logo.png', height: 110.0, width: 110.0),
+                child: Image.asset(
+                  'assets/images/logo.png',
+                  height: 110.0,
+                  width: 110.0,
+                  fit: BoxFit.cover,
+                ),
               ),
             ),
           ),
@@ -210,7 +215,12 @@ class DesktopDrawer {
             child: Center(
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(55),
-                child: Image.asset('assets/images/logo.png', height: 110.0, width: 110.0),
+                child: Image.asset(
+                  'assets/images/logo.png',
+                  height: 110.0,
+                  width: 110.0,
+                  fit: BoxFit.cover,
+                ),
               ),
             ),
           ),

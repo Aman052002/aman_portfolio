@@ -23,6 +23,7 @@ class MS1Header extends StatelessWidget {
               'assets/images/logo.png',
               height: 200.0,
               width: 200.0,
+              fit: BoxFit.cover,
             ),
           ),
         ),

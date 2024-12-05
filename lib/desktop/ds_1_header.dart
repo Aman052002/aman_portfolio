@@ -24,6 +24,7 @@ class DS1Header extends StatelessWidget {
               'assets/images/logo.png',
               height: 250.0,
               width: 250.0,
+              fit: BoxFit.cover,
             ),
           ),
         ),
