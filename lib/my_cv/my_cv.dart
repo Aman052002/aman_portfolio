@@ -25,7 +25,7 @@ class _MyCVState extends State<MyCV> {
       ),
       body: SafeArea(
         child: PdfViewer.asset(
-          'assets/images/aman_rathore_cv.pdf',
+          'assets/images/aman_new_cv.pdf',
           params: const PdfViewerParams(),
         ),
       ),
