@@ -49,7 +49,7 @@ class DataValues {
   static const String aboutMeFnLTitle = 'First and Last Name';
   static const String aboutMeFnLDescription = 'Aman Rathore';
   static const String aboutMeDobTitle = 'Birthday';
-  static const String aboutMeDobDescription = 'May 03, 2003';
+  static const String aboutMeDobDescription = 'May 03, 2002';
   static const String aboutMeLanguageTitle = 'Languages';
   static const String aboutMeLanguageDescription = 'Hindi\n'
       'English';
@@ -108,14 +108,12 @@ class DataValues {
   static const String experienceOrg1Role = 'Mobile Application Developer';
   static const String experienceOrg1Years = 'June 2022 - Present';
   static const String experienceOrg1Vales = 'Mobile, Desktop, Web development, UI UX, Tech Support Assistant & Data Analysis.';
-  static const String experienceOrg2Title = 'Dollop Infotech';
+  static const String experienceOrg2Title = 'Dollop Infotech Pvt. Ltd.';
   static const String experienceOrg2Role = 'Trainee Software Developer (Flutter)';
   static const String experienceOrg2Years = 'June 2022 - Present';
   static const String experienceOrg2Vales = 'Android, Flutter, Dart, Firebase, Git, REST API, JSON Parsing & UI UX Designing.';
   static const String experienceBanner = 'Find my working';
   static const String experienceBannerTitle = 'toolkit';
-  static const String experienceBannerWeb =
-      'Visit toolkit.dileepabandara.dev for more details >>';
 
 
 
@@ -124,6 +122,6 @@ class DataValues {
   static const String contactDescription =
       'Hey! I appreciate you looking at my public profile. Please feel free to ask me anything or to discuss anything with me. I\'m happy to chat with and meet new people. Regardless of the fact that I don\'t use social media much, you can find me there. So find me and get in touch with me. Send me an email if you need to discuss anything serious with me. I\'ll get back to you in 12 to 24 hours.';
   static const String contactBanner = 'Send me an email at';
-  static const String contactEmail = 'aman93406@gmail.com';
+  static const String contactEmail = 'aman934060@gmail.com';
 
 }

@@ -45135,18 +45135,18 @@ J(a){var s=null,r=A.c2(s,A.fN(A.ZS(A.iM(125),A.kg("assets/images/logo.png",B.dL,
 return A.c2(s,new A.bU(B.DP,A.bR(A.b([A.hD(A.b([r,B.Nc,A.bR(A.b([A.d4("Hello, I'm",q.f,s),A.d4("Aman Rathore",q.b,s),A.d4("Developer",q.r,s),B.b1,B.hI],p),B.Y,B.x,B.w)],p),B.Y,B.d8,B.w),B.kG,new A.Ke().ahd(a)],p),B.Y,B.x,B.w),s),B.n,B.bx,s,s,s,s,s,s,s,s,s,s)}}
 A.Hq.prototype={
 J(a){var s=null,r="Aman Rathore",q=$.XT(),p=t.p,o=t.w
-return A.c2(s,new A.bU(B.c4,A.bR(A.b([B.n5,B.bV,A.dV(A.hD(A.b([A.iZ(A.bR(A.b([new A.ct().d5(u.g,"Biography")],p),B.R,B.x,B.w),1),A.dV(s,s,A.bi(a,s,o).w.a.a*0.08),A.iZ(A.bR(A.b([new A.ct().d5(r,"Full Name"),B.a5,new A.ct().d5(r,"Name with Initials"),B.a5,new A.ct().d5(r,"First and Last Name"),B.a5,new A.ct().d5("Male (He/Him/His)","Gender"),B.a5,new A.ct().d5("May 03, 2003","Birthday"),B.a5,new A.ct().d5("Hindi\nEnglish","Languages")],p),B.R,B.x,B.w),1),A.dV(s,s,A.bi(a,s,o).w.a.a*0.08),A.iZ(A.bR(A.b([new A.ct().d5("Indian","Nationality"),B.a5,new A.ct().d5("Indore, Madhya Pradesh","Current Locations"),B.a5,new A.ct().d5("aman.dev\n08:00 - 18:00 (GMT+5:30)","Working Domain"),B.a5,new A.ct().d5(u.C,"Hobbies"),B.a5,new A.ct().d5(u.x,"Goal")],p),B.R,B.x,B.w),1)],p),B.R,B.x,B.w),s,s),B.bV,A.dV(A.hD(A.b([A.iZ(new A.f7().zS(u.u,"assets/icons/student.png",$.hh().k(0),"Computing Student",$.hh()),1),A.dV(s,s,A.bi(a,s,o).w.a.a*0.03),A.iZ(new A.f7().zS(u.M,"assets/icons/developer.png",$.hh().k(0),"Solution Developer",$.hh()),1)],p),B.R,B.x,B.w),s,s)],p),B.R,B.x,B.w),s),B.n,B.b8,s,s,s,s,q,s,s,s,s,s)}}
+return A.c2(s,new A.bU(B.c4,A.bR(A.b([B.n5,B.bV,A.dV(A.hD(A.b([A.iZ(A.bR(A.b([new A.ct().d5(u.g,"Biography")],p),B.R,B.x,B.w),1),A.dV(s,s,A.bi(a,s,o).w.a.a*0.08),A.iZ(A.bR(A.b([new A.ct().d5(r,"Full Name"),B.a5,new A.ct().d5(r,"Name with Initials"),B.a5,new A.ct().d5(r,"First and Last Name"),B.a5,new A.ct().d5("Male (He/Him/His)","Gender"),B.a5,new A.ct().d5("May 03, 2002","Birthday"),B.a5,new A.ct().d5("Hindi\nEnglish","Languages")],p),B.R,B.x,B.w),1),A.dV(s,s,A.bi(a,s,o).w.a.a*0.08),A.iZ(A.bR(A.b([new A.ct().d5("Indian","Nationality"),B.a5,new A.ct().d5("Indore, Madhya Pradesh","Current Locations"),B.a5,new A.ct().d5("aman.dev\n08:00 - 18:00 (GMT+5:30)","Working Domain"),B.a5,new A.ct().d5(u.C,"Hobbies"),B.a5,new A.ct().d5(u.x,"Goal")],p),B.R,B.x,B.w),1)],p),B.R,B.x,B.w),s,s),B.bV,A.dV(A.hD(A.b([A.iZ(new A.f7().zS(u.u,"assets/icons/student.png",$.hh().k(0),"Computing Student",$.hh()),1),A.dV(s,s,A.bi(a,s,o).w.a.a*0.03),A.iZ(new A.f7().zS(u.M,"assets/icons/developer.png",$.hh().k(0),"Solution Developer",$.hh()),1)],p),B.R,B.x,B.w),s,s)],p),B.R,B.x,B.w),s),B.n,B.b8,s,s,s,s,q,s,s,s,s,s)}}
 A.Hr.prototype={
 J(a){var s=null,r=$.XV(),q=t.p
 return A.c2(s,new A.bU(B.c4,A.bR(A.b([B.n7,A.hD(A.b([A.iZ(new A.f7().zT("mms",$.XS().k(0),"Nirmal VidhyaPeeth Barwaha, M.P",$.XS(),["Higher secondary [HSC]","Combined Maths, Physics, and Chemistry","","Education Period","Secondary: 2019 - 2020","Higher Secondary: 2022 - 2023"]),1),A.dV(s,s,A.bi(a,s,t.w).w.a.a*0.05),A.iZ(new A.f7().zT("nibm",$.XQ().k(0),u.e,$.XQ(),["B.Tech - Information Technology","Running","2023 - Ongoing","","",""]),1)],q),B.R,B.d9,B.w)],q),B.R,B.x,B.w),s),B.n,B.b8,s,s,s,s,r,s,s,s,s,s)}}
 A.Hs.prototype={
 J(a){var s=null,r="June 2022 - Present",q=$.XW(),p=t.p
-return A.c2(s,new A.bU(B.c4,A.bR(A.b([B.n6,A.hD(A.b([A.iZ(new A.f7().zU("logo",!0,$.hh().k(0),"Mobile Application Developer","Aman Rathore",$.hh(),u.R,r),1),A.dV(s,s,A.bi(a,s,t.w).w.a.a*0.05),A.iZ(new A.f7().zU("dollop",!0,$.XR().k(0),"Trainee Software Developer (Flutter)","Dollop Infotech",$.XR(),u.j,r),1)],p),B.R,B.d9,B.w)],p),B.R,B.x,B.w),s),B.n,B.b8,s,s,s,s,q,s,s,s,s,s)}}
+return A.c2(s,new A.bU(B.c4,A.bR(A.b([B.n6,A.hD(A.b([A.iZ(new A.f7().zU("logo",!0,$.hh().k(0),"Mobile Application Developer","Aman Rathore",$.hh(),u.R,r),1),A.dV(s,s,A.bi(a,s,t.w).w.a.a*0.05),A.iZ(new A.f7().zU("dollop",!0,$.XR().k(0),"Trainee Software Developer (Flutter)","Dollop Infotech Pvt. Ltd.",$.XR(),u.j,r),1)],p),B.R,B.d9,B.w)],p),B.R,B.x,B.w),s),B.n,B.b8,s,s,s,s,q,s,s,s,s,s)}}
 A.Ht.prototype={
 J(a){var s,r=null,q=$.XU(),p=$.fM().p2,o=p.w.r
 p=p.r.w
 s=t.p
-return A.c2(r,new A.bU(B.c4,A.bR(A.b([B.n4,A.hD(A.b([A.d4("Send me an email at",A.iw(r,r,B.i,r,r,r,r,r,r,r,r,o,r,r,p,r,r,!0,r,r,r,r,r,r,r,r),r),B.yz,A.jc(A.fi(r,A.pB(A.hI("aman93406@gmail.com",r,A.iw(r,r,B.ar,r,r,r,r,r,r,r,r,o,r,r,p,r,r,!0,r,r,r,r,r,r,r,r),r),"Click to copy email to clipboard"),B.Z,!1,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,new A.a_r(a),r,r,r,r,r,r,!1,B.aE),B.b2,r,r,r,r)],s),B.Y,B.d8,B.w),B.bV,B.hI],s),B.Y,B.x,B.w),r),B.n,B.b8,r,r,r,r,q,r,r,r,r,r)}}
+return A.c2(r,new A.bU(B.c4,A.bR(A.b([B.n4,A.hD(A.b([A.d4("Send me an email at",A.iw(r,r,B.i,r,r,r,r,r,r,r,r,o,r,r,p,r,r,!0,r,r,r,r,r,r,r,r),r),B.yz,A.jc(A.fi(r,A.pB(A.hI("aman934060@gmail.com",r,A.iw(r,r,B.ar,r,r,r,r,r,r,r,r,o,r,r,p,r,r,!0,r,r,r,r,r,r,r,r),r),"Click to copy email to clipboard"),B.Z,!1,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,new A.a_r(a),r,r,r,r,r,r,!1,B.aE),B.b2,r,r,r,r)],s),B.Y,B.d8,B.w),B.bV,B.hI],s),B.Y,B.x,B.w),r),B.n,B.b8,r,r,r,r,q,r,r,r,r,r)}}
 A.a_r.prototype={
 $0(){var s,r=null
 A.qC(B.lU)
@@ -45227,13 +45227,13 @@ r=new A.dj(B.bx,s,s,s,s,s,B.aL)
 return new A.vF(new A.bU(B.DN,p,s),r,s,B.al,B.DA,s,s)}}
 A.JG.prototype={
 J(a){var s=null,r="Aman Rathore",q=$.XT(),p=t.p
-return A.c2(s,new A.bU(B.c4,A.bR(A.b([B.n5,B.bV,A.dV(A.bR(A.b([new A.ct().d5(u.g,"Biography"),B.a5,new A.ct().d5(r,"Full Name"),B.a5,new A.ct().d5(r,"Name with Initials"),B.a5,new A.ct().d5(r,"First and Last Name"),B.a5,new A.ct().d5("Male (He/Him/His)","Gender"),B.a5,new A.ct().d5("May 03, 2003","Birthday"),B.a5,new A.ct().d5("Hindi\nEnglish","Languages"),B.a5,new A.ct().d5("Indian","Nationality"),B.a5,new A.ct().d5("Indore, Madhya Pradesh","Current Locations"),B.a5,new A.ct().d5("aman.dev\n08:00 - 18:00 (GMT+5:30)","Working Domain"),B.a5,new A.ct().d5(u.C,"Hobbies"),B.a5,new A.ct().d5(u.x,"Goal")],p),B.R,B.x,B.w),s,s),B.bV,A.dV(A.bR(A.b([new A.f7().zS(u.u,"assets/icons/student.png",$.hh().k(0),"Computing Student",$.hh()),B.b1,new A.f7().zS(u.M,"assets/icons/developer.png",$.hh().k(0),"Solution Developer",$.hh())],p),B.R,B.x,B.w),s,s)],p),B.R,B.x,B.w),s),B.n,B.b8,s,s,s,s,q,s,s,s,s,s)}}
+return A.c2(s,new A.bU(B.c4,A.bR(A.b([B.n5,B.bV,A.dV(A.bR(A.b([new A.ct().d5(u.g,"Biography"),B.a5,new A.ct().d5(r,"Full Name"),B.a5,new A.ct().d5(r,"Name with Initials"),B.a5,new A.ct().d5(r,"First and Last Name"),B.a5,new A.ct().d5("Male (He/Him/His)","Gender"),B.a5,new A.ct().d5("May 03, 2002","Birthday"),B.a5,new A.ct().d5("Hindi\nEnglish","Languages"),B.a5,new A.ct().d5("Indian","Nationality"),B.a5,new A.ct().d5("Indore, Madhya Pradesh","Current Locations"),B.a5,new A.ct().d5("aman.dev\n08:00 - 18:00 (GMT+5:30)","Working Domain"),B.a5,new A.ct().d5(u.C,"Hobbies"),B.a5,new A.ct().d5(u.x,"Goal")],p),B.R,B.x,B.w),s,s),B.bV,A.dV(A.bR(A.b([new A.f7().zS(u.u,"assets/icons/student.png",$.hh().k(0),"Computing Student",$.hh()),B.b1,new A.f7().zS(u.M,"assets/icons/developer.png",$.hh().k(0),"Solution Developer",$.hh())],p),B.R,B.x,B.w),s,s)],p),B.R,B.x,B.w),s),B.n,B.b8,s,s,s,s,q,s,s,s,s,s)}}
 A.JH.prototype={
 J(a){var s=null,r=$.XV()
 return A.c2(s,new A.bU(B.c4,A.bR(A.b([B.n7,B.a5,new A.f7().zT("mms",$.XS().k(0),"Nirmal VidhyaPeeth Barwaha, M.P",$.XS(),["Higher secondary [HSC]","Combined Maths, Physics, and Chemistry","","Education Period","Secondary: 2019 - 2020","Higher Secondary: 2022 - 2023"]),B.b1,new A.f7().zT("nibm",$.XQ().k(0),u.e,$.XQ(),["B.Tech - Information Technology","Running","2023 - Ongoing","","",""])],t.p),B.R,B.x,B.w),s),B.n,B.b8,s,s,s,s,r,s,s,s,s,s)}}
 A.JI.prototype={
 J(a){var s=null,r="June 2022 - Present",q=$.XW()
-return A.c2(s,new A.bU(B.c4,A.bR(A.b([B.n6,B.a5,new A.f7().zU("logo",!0,$.hh().k(0),"Mobile Application Developer","Aman Rathore",$.hh(),u.R,r),B.b1,new A.f7().zU("dollop",!0,$.XR().k(0),"Trainee Software Developer (Flutter)","Dollop Infotech",$.XR(),u.j,r)],t.p),B.R,B.x,B.w),s),B.n,B.b8,s,s,s,s,q,s,s,s,s,s)}}
+return A.c2(s,new A.bU(B.c4,A.bR(A.b([B.n6,B.a5,new A.f7().zU("logo",!0,$.hh().k(0),"Mobile Application Developer","Aman Rathore",$.hh(),u.R,r),B.b1,new A.f7().zU("dollop",!0,$.XR().k(0),"Trainee Software Developer (Flutter)","Dollop Infotech Pvt. Ltd.",$.XR(),u.j,r)],t.p),B.R,B.x,B.w),s),B.n,B.b8,s,s,s,s,q,s,s,s,s,s)}}
 A.JJ.prototype={
 J(a){var s=null,r=$.ao8()
 return A.c2(s,new A.bU(B.c4,A.bR(A.b([A.d4("MySkills",A.a6(a).p2.c,s),B.a5,B.tD],t.p),B.Y,B.x,B.w),s),B.n,B.b8,s,s,s,s,r,s,s,s,s,s)}}
@@ -45241,7 +45241,7 @@ A.JK.prototype={
 J(a){var s,r=null,q=$.XU(),p=$.fM().p2,o=p.w.r
 p=p.r.w
 s=t.p
-return A.c2(r,A.bR(A.b([B.bV,new A.bU(B.DZ,A.bR(A.b([B.n4,B.a5,A.d4("Send me an email at",A.iw(r,r,B.i,r,r,r,r,r,r,r,r,o,r,r,p,r,r,!0,r,r,r,r,r,r,r,r),r),B.Nd,A.jc(A.fi(r,A.pB(A.hI("aman93406@gmail.com",r,A.iw(r,r,B.ar,r,r,r,r,r,r,r,r,o,r,r,p,r,r,!0,r,r,r,r,r,r,r,r),r),"Click to copy email to clipboard"),B.Z,!1,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,new A.a5i(a),r,r,r,r,r,r,!1,B.aE),B.b2,r,r,r,r)],s),B.Y,B.x,B.w),r),B.b1,B.hI],s),B.Y,B.x,B.w),B.n,B.b8,r,r,r,r,q,r,r,r,r,r)}}
+return A.c2(r,A.bR(A.b([B.bV,new A.bU(B.DZ,A.bR(A.b([B.n4,B.a5,A.d4("Send me an email at",A.iw(r,r,B.i,r,r,r,r,r,r,r,r,o,r,r,p,r,r,!0,r,r,r,r,r,r,r,r),r),B.Nd,A.jc(A.fi(r,A.pB(A.hI("aman934060@gmail.com",r,A.iw(r,r,B.ar,r,r,r,r,r,r,r,r,o,r,r,p,r,r,!0,r,r,r,r,r,r,r,r),r),"Click to copy email to clipboard"),B.Z,!1,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,new A.a5i(a),r,r,r,r,r,r,!1,B.aE),B.b2,r,r,r,r)],s),B.Y,B.x,B.w),r),B.b1,B.hI],s),B.Y,B.x,B.w),B.n,B.b8,r,r,r,r,q,r,r,r,r,r)}}
 A.a5i.prototype={
 $0(){var s,r=null
 A.qC(B.lU)
@@ -88334,7 +88334,7 @@ B.n=new A.qy(0,"none")
 B.X=new A.qy(1,"hardEdge")
 B.bO=new A.qy(2,"antiAlias")
 B.cU=new A.qy(3,"antiAliasWithSaveLayer")
-B.lU=new A.nK("aman93406@gmail.com")
+B.lU=new A.nK("aman934060@gmail.com")
 B.lV=new A.qB(0,"pasteable")
 B.iy=new A.qB(1,"unknown")
 B.Cj=new A.y(4290479868)
