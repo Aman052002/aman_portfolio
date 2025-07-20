@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'package:aman_portfolio/mobile/ms_6_myskills.dart';
 import 'package:flutter/material.dart';
-import 'package:pdfrx/pdfrx.dart';
 import 'theme/responsive_screen_provider.dart';
 import 'theme/app_theme.dart';
 import 'widgets/nav_bar.dart';
@@ -48,7 +47,6 @@ class _SplashState extends State<Splash> {
   void initState() {
     super.initState();
     getImageSize();
-
   }
 
 
@@ -63,7 +61,7 @@ class _SplashState extends State<Splash> {
   void getImageSize() {
     const minSize = 0.0;
     const stepSize = 10.0; // Adjust the step size as needed
-    const duration = Duration(milliseconds: 50); // Duration for each step
+    const duration = Duration(milliseconds: 100); // Duration for each step
 
     Timer.periodic(duration, (timer) {
       setState(() {
@@ -130,8 +128,11 @@ class _HomePageState extends State<HomePage> {
   }
 
   void _scrollToTop() {
-    _scrollController.animateTo(0,
-        duration: const Duration(milliseconds: 1000), curve: Curves.easeInOut);
+    _scrollController.animateTo(
+      0,
+      duration: const Duration(milliseconds: 1000),
+      curve: Curves.easeInOut,
+    );
   }
 
   @override

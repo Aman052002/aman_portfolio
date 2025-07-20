@@ -37,7 +37,7 @@ dependencies:
   cupertino_icons:
   url_launcher:
   flutter_native_splash:
-  pdfrx:
+  syncfusion_flutter_pdfviewer:
   web:
 
 

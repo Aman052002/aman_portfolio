@@ -23,7 +23,7 @@ class DataValues {
   // Header
   static const String headerGreetings = 'Hello, I\'m';
   static const String headerName = 'Aman Rathore';
-  static const String headerTitle = 'Developer';
+  static const String headerTitle = 'Mobile App Developer';
 
   // Navigation Bar
   static const String navBarAboutMe = 'About Me';
@@ -102,11 +102,10 @@ class DataValues {
 
   // Experience
   static const String experienceTitle = 'Experience';
-  static const String experienceDescription =
-      'Since I\'ve started to learn and apply my knowledge in different places. So I started working as a freelance solution developer, and with time, I fell in love with different technologies. I received industrial training in my second year, and now I try out my experience.';
+  static const String experienceDescription = 'Since I\'ve started to learn and apply my knowledge in different places. So I started working as a freelance solution developer, and with time, I fell in love with different technologies. I received industrial training in my second year, and now I try out my experience.';
   static const String experienceOrg1Title = 'Aman Rathore';
   static const String experienceOrg1Role = 'Mobile Application Developer';
-  static const String experienceOrg1Years = 'June 2022 - Present';
+  static const String experienceOrg1Years = 'Dec 2024 - Present';
   static const String experienceOrg1Vales = 'Mobile, Desktop, Web development, UI UX, Tech Support Assistant & Data Analysis.';
   static const String experienceOrg2Title = 'Dollop Infotech Pvt. Ltd.';
   static const String experienceOrg2Role = 'Trainee Software Developer (Flutter)';
@@ -119,8 +118,7 @@ class DataValues {
 
   // Contact
   static const String contactTitle = 'Contact';
-  static const String contactDescription =
-      'Hey! I appreciate you looking at my public profile. Please feel free to ask me anything or to discuss anything with me. I\'m happy to chat with and meet new people. Regardless of the fact that I don\'t use social media much, you can find me there. So find me and get in touch with me. Send me an email if you need to discuss anything serious with me. I\'ll get back to you in 12 to 24 hours.';
+  static const String contactDescription = 'Hey! I appreciate you looking at my public profile. Please feel free to ask me anything or to discuss anything with me. I\'m happy to chat with and meet new people. Regardless of the fact that I don\'t use social media much, you can find me there. So find me and get in touch with me. Send me an email if you need to discuss anything serious with me. I\'ll get back to you in 12 to 24 hours.';
   static const String contactBanner = 'Send me an email at';
   static const String contactEmail = 'aman934060@gmail.com';
 

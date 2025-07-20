@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "myportfolio-cfe58"
-  }
+    "default": "myportfolio-cfe58",
+    "aman.dev": "myportfolio-cfe58"
+  },
+  "targets": {},
+  "etags": {}
 }

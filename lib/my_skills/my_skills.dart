@@ -118,6 +118,11 @@ class MySKills extends StatelessWidget {
           title: 'GitHub',
           image: 'assets/icons/github.png',
         ),
+        AnimatedLinearProgressIndicator(
+          percentage: 0.90,
+          title: 'Supabase',
+          image: 'assets/icons/supabase.png',
+        ),
       ],
     );
   }

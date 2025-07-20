@@ -21,40 +21,40 @@ class DS4Experience extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const FrameTitle(
-                title: DataValues.experienceTitle,
-                description: DataValues.experienceDescription),
+              title: DataValues.experienceTitle,
+              description: DataValues.experienceDescription,
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Expanded(
                   child: ContainerCard().type3(
-                    image: 'logo',
-                    title: DataValues.experienceOrg1Title,
-                    role: DataValues.experienceOrg1Role,
-                    years: DataValues.experienceOrg1Years,
-                    values: DataValues.experienceOrg1Vales,
-                    message: DataValues.linkedinURL.toString(),
-                    url: DataValues.linkedinURL,
-                    isButtonEnabled: true,
-                  ),
-                ),
-                SizedBox(width: MediaQuery.of(context).size.width * 0.05),
-                Expanded(
-                  child: ContainerCard().type3(
                     image: 'dollop',
                     title: DataValues.experienceOrg2Title,
                     role: DataValues.experienceOrg2Role,
-                    years: DataValues.experienceOrg2Years,
+                    years: 'June 2022 - Dec 2024',
                     values: DataValues.experienceOrg2Vales,
                     message: DataValues.companyURL.toString(),
                     url: DataValues.companyURL,
                     isButtonEnabled: true,
                   ),
                 ),
+                SizedBox(width: MediaQuery.of(context).size.width * 0.05),
+                Expanded(
+                  child: ContainerCard().type3(
+                    image: 'narma_logo',
+                    title: 'Narma.dev',
+                    role: DataValues.experienceOrg1Role,
+                    years: DataValues.experienceOrg1Years,
+                    values: DataValues.experienceOrg1Vales,
+                    message: DataValues.linkedinURL.toString(),
+                    url: Uri.parse('https://narma.dev'),
+                    isButtonEnabled: true,
+                  ),
+                ),
               ],
             ),
-
           ],
         ),
       ),
