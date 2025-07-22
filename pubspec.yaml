@@ -39,6 +39,7 @@ dependencies:
   flutter_native_splash:
   syncfusion_flutter_pdfviewer:
   web:
+  pdf_render: ^1.4.12
 
 
 flutter_native_splash:

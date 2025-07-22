@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
+import 'package:pdf_render/pdf_render_widgets.dart';
 
 class MyCV extends StatefulWidget {
   const MyCV({Key? key}) : super(key: key);
@@ -10,18 +9,6 @@ class MyCV extends StatefulWidget {
 }
 
 class _MyCVState extends State<MyCV> {
-  late Future<Uint8List> _loadPdf;
-
-  @override
-  void initState() {
-    super.initState();
-    _loadPdf = loadPdfFromAssets();
-  }
-
-  Future<Uint8List> loadPdfFromAssets() async {
-    final data = await rootBundle.load('assets/images/aman_rathore_cv.pdf');
-    return data.buffer.asUint8List();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -33,20 +20,8 @@ class _MyCVState extends State<MyCV> {
           onPressed: () => Navigator.pop(context),
         ),
       ),
-      body: FutureBuilder<Uint8List>(
-        future: _loadPdf,
-        builder: (context, snapshot) {
-          if (snapshot.connectionState == ConnectionState.done) {
-            if (snapshot.hasData &&  snapshot.data != null) {
-              print('snapshot.data:::  ${snapshot.data}');
-              return SfPdfViewer.memory(snapshot.data!);
-            } else {
-              return const Center(child: Text('Failed to load PDF'));
-            }
-          } else {
-            return const Center(child: CircularProgressIndicator());
-          }
-        },
+      body: PdfViewer.openAsset(
+        'assets/images/aman_new_cv.pdf',
       ),
     );
   }

@@ -40,19 +40,19 @@ class NavBar {
           ),
           message: 'Go to ${DataValues.navBarExperience} section',
         ),
-        // const SizedBox(width: 10.0),
-        // ButtonTextLarge(
-        //   text: DataValues.navBarResume,
-        //   onPressed: () {
-        //     Navigator.push(
-        //       context,
-        //       MaterialPageRoute(
-        //         builder: (context) => const MyCV(),
-        //       ),
-        //     );
-        //   },
-        //   message: 'Go to ${DataValues.navBarResume} section',
-        // ),
+        const SizedBox(width: 10.0),
+        ButtonTextLarge(
+          text: DataValues.navBarResume,
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const MyCV(),
+              ),
+            );
+          },
+          message: 'Go to ${DataValues.navBarResume} section',
+        ),
         const SizedBox(width: 10.0),
         ButtonRectangle(
             name: DataValues.navBarContactMe,
@@ -163,20 +163,20 @@ class NavBar {
             },
             message: 'Go to ${DataValues.navBarMySkills} section',
           ),
-          // const SizedBox(height: 10.0),
-          // ButtonTextLarge(
-          //   text: DataValues.navBarResume,
-          //   onPressed: () {
-          //     Navigator.pop(context);
-          //     Navigator.push(
-          //       context,
-          //       MaterialPageRoute(
-          //         builder: (context) => const MyCV(),
-          //       ),
-          //     );
-          //   },
-          //   message: 'Go to ${DataValues.navBarResume} section',
-          // ),
+          const SizedBox(height: 10.0),
+          ButtonTextLarge(
+            text: DataValues.navBarResume,
+            onPressed: () {
+              Navigator.pop(context);
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const MyCV(),
+                ),
+              );
+            },
+            message: 'Go to ${DataValues.navBarResume} section',
+          ),
           const SizedBox(height: 25.0),
           ButtonRectangle(
               name: DataValues.navBarContactMe,
